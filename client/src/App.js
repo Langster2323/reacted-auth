@@ -18,11 +18,12 @@ import withContext from './Context';
 // Connect UserSignIn and UserSignup to context...
 const UserSignUpWithContext = withContext(UserSignUp);
 const UserSignInWithContext = withContext(UserSignIn);
+const HeaderWithContext = withContext(Header);
 
 export default () => (
   <Router>
     <div>
-      <Header />
+      <HeaderWithContext />
 
       <Switch>
         <Route exact path="/" component={Public} />
