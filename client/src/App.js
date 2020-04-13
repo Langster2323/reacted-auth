@@ -12,13 +12,15 @@ import UserSignUp from './components/UserSignUp';
 import UserSignIn from './components/UserSignIn';
 import UserSignOut from './components/UserSignOut';
 import Authenticated from './components/Authenticated';
+import PrivateRoute from './PrivateRoute';
 
 import withContext from './Context';
 
-// Connect UserSignIn and UserSignup to context...
+// Connect components to context...
 const UserSignUpWithContext = withContext(UserSignUp);
 const UserSignInWithContext = withContext(UserSignIn);
 const HeaderWithContext = withContext(Header);
+const AuthWithContext = withContext(Authenticated)
 
 export default () => (
   <Router>
@@ -27,7 +29,7 @@ export default () => (
 
       <Switch>
         <Route exact path="/" component={Public} />
-        <Route path="/authenticated" component={Authenticated} />
+        <PrivateRoute path="/authenticated" component={AuthWithContext} />
         <Route path="/signin" component={UserSignInWithContext} />
         <Route path="/signup" component={UserSignUpWithContext} />
         <Route path="/signout" component={UserSignOut} />
