@@ -720,3 +720,45 @@ input:focus {
   color: #63537d;
   box-shadow: 0 0 0 2px #63537d inset;
 }
+
+.element {
+  position: absolute;
+  left: -5%;
+  bottom: 28%;
+  height: 410px;
+  width: 410px;
+  background-color: red;
+  animation: 
+    pulse 3s ease infinite alternate, 
+    nudge 5s linear infinite alternate;
+  border-radius: 100%;
+  margin: auto;
+}
+
+.circle-txt {
+  position: absolute;
+  bottom: 40%;
+  width: 100%;
+  text-align: center;
+  /* NOT IMPORTANT */
+  font-family: arial, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+}
+
+@keyframes pulse {
+  25% {
+    background-color: #F72BB8;
+  }
+  50% {
+    background-color: #EF56FC;
+  }
+  75% {
+    background-color: #68C4FD;
+  }
+  100% {
+    background-color: #5BFAAB;
+  }
+}
+
