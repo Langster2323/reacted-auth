@@ -723,134 +723,13 @@ input:focus {
 
 
 /* Mobile devices */
-@media (max-width: 815px) and (orientation: landscape){
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) {
   .element {
     position: absolute;
     left: 30%;
-    height: 350px;
-    width: 350px;
-    background-color: red;
-    animation: 
-      pulse 3s ease infinite alternate, 
-      nudge 5s linear infinite alternate;
-    border-radius: 100%;
-    margin: auto;
-  }
-  
-  .circle-txt {
-    position: absolute;
-    bottom: 40%;
-    width: 100%;
-    text-align: center;
-    /* NOT IMPORTANT */
-    font-family: arial, sans-serif;
-    font-size: 40px;
-    font-weight: bold;
-    color: #fff;
-  }
-
-  @keyframes nudge {
-    0%, 100% {
-      transform: translate(0, 0);
-    }
-    
-    50% {
-      transform: translate(150px, 0);
-    }
-    
-    80% {
-      transform: translate(-150px, 0);
-    }
-  }
-  
-}
-
-@media (max-width: 420px) {
-  .element {
-    position: absolute;
-    left: -5%;
-    bottom: 20%;
-    height: 450px;
-    width: 450px;
-    background-color: red;
-    animation: 
-      pulse 3s ease infinite alternate, 
-      nudge 5s linear infinite alternate;
-    border-radius: 100%;
-    margin: auto;
-  }
-  
-  .circle-txt {
-    position: absolute;
-    bottom: 40%;
-    width: 100%;
-    text-align: center;
-    /* NOT IMPORTANT */
-    font-family: arial, sans-serif;
-    font-size: 40px;
-    font-weight: bold;
-    color: #fff;
-  }
-}
-
-@media (max-width: 380px) {
-  .element {
-    position: absolute;
-    left: -5%;
-    bottom: 28%;
-    height: 410px;
-    width: 410px;
-    background-color: red;
-    animation: 
-      pulse 3s ease infinite alternate, 
-      nudge 5s linear infinite alternate;
-    border-radius: 100%;
-    margin: auto;
-  }
-  
-  .circle-txt {
-    position: absolute;
-    bottom: 40%;
-    width: 100%;
-    text-align: center;
-    /* NOT IMPORTANT */
-    font-family: arial, sans-serif;
-    font-size: 40px;
-    font-weight: bold;
-    color: #fff;
-  }
-}
-@media (max-width: 360px) {
-  .element {
-    position: absolute;
-    left: -5%;
-    bottom: 20%;
-    height: 410px;
-    width: 410px;
-    background-color: red;
-    animation: 
-      pulse 3s ease infinite alternate, 
-      nudge 5s linear infinite alternate;
-    border-radius: 100%;
-    margin: auto;
-  }
-  
-  .circle-txt {
-    position: absolute;
-    bottom: 40%;
-    width: 100%;
-    text-align: center;
-    /* NOT IMPORTANT */
-    font-family: arial, sans-serif;
-    font-size: 40px;
-    font-weight: bold;
-    color: #fff;
-  }
-}
-@media (max-width: 320px) {
-  .element {
-    position: absolute;
-    bottom: 20%;
     height: 350px;
     width: 350px;
     background-color: red;
@@ -873,6 +752,211 @@ input:focus {
     color: #fff;
   }
 }
+
+
+/* iPhone 6, 7, 8 Landscape */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) {
+  .element {
+    position: absolute;
+    left: 28%;
+    height: 350px;
+    width: 350px;
+    background-color: red;
+    animation: 
+      pulse 3s ease infinite alternate, 
+      nudge 5s linear infinite alternate;
+    border-radius: 100%;
+    margin: auto;
+  }
+  
+  .circle-txt {
+    position: absolute;
+    bottom: 40%;
+    width: 100%;
+    text-align: center;
+    /* NOT IMPORTANT */
+    font-family: arial, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+
+/* iPhone 6, 7, 8 Portrait */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) {
+  .element {
+    position: absolute;
+    left: 28%;
+    height: 350px;
+    width: 350px;
+    background-color: red;
+    animation: 
+      pulse 3s ease infinite alternate, 
+      nudge 5s linear infinite alternate;
+    border-radius: 100%;
+    margin: auto;
+  }
+  
+  .circle-txt {
+    position: absolute;
+    bottom: 40%;
+    width: 100%;
+    text-align: center;
+    /* NOT IMPORTANT */
+    font-family: arial, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+
+/* Galaxy S5 Landscape*/
+@media only screen 
+and (min-device-width : 360px) 
+and (max-device-width : 640px) 
+and (orientation : landscape) {
+  .element {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background-color: red;
+    animation: 
+      pulse 3s ease infinite alternate, 
+      nudge 5s linear infinite alternate;
+    border-radius: 100%;
+    margin: auto;
+  }
+  
+  .circle-txt {
+    position: absolute;
+    bottom: 40%;
+    width: 100%;
+    text-align: center;
+    /* NOT IMPORTANT */
+    font-family: arial, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+
+/* Galaxy S5 Portrait*/
+@media only screen 
+and (min-device-width : 360px) 
+and (max-device-width : 640px) 
+and (orientation : portrait) {
+  .element {
+    position: absolute;
+    left: 8%;
+    height: 300px;
+    width: 300px;
+    background-color: red;
+    animation: 
+      pulse 3s ease infinite alternate, 
+      nudge 5s linear infinite alternate;
+    border-radius: 100%;
+    margin: auto;
+  }
+  
+  .circle-txt {
+    position: absolute;
+    bottom: 40%;
+    width: 100%;
+    text-align: center;
+    /* NOT IMPORTANT */
+    font-family: arial, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+
+/* iPhone 6, 7, 8 Plus Portrait*/
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : portrait) {
+  .element {
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+    height: 350px;
+    width: 350px;
+    background-color: red;
+    animation: 
+      pulse 3s ease infinite alternate, 
+      nudge 5s linear infinite alternate;
+    border-radius: 100%;
+    margin: auto;
+  }
+  
+  .circle-txt {
+    position: absolute;
+    bottom: 40%;
+    width: 100%;
+    text-align: center;
+    /* NOT IMPORTANT */
+    font-family: arial, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+
+/* iPhone 6, 7, 8 Plus Landscape*/
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : landscape) {
+  .element {
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    background-color: red;
+    animation: 
+      pulse 3s ease infinite alternate, 
+      nudge 5s linear infinite alternate;
+    border-radius: 100%;
+    margin: auto;
+  }
+  
+  .circle-txt {
+    position: absolute;
+    bottom: 40%;
+    width: 100%;
+    text-align: center;
+    /* NOT IMPORTANT */
+    font-family: arial, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+
+/* @media only screen and (device-width: 815px) and (orientation: landscape){
+  
+
+  @keyframes nudge {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    
+    50% {
+      transform: translate(150px, 0);
+    }
+    
+    80% {
+      transform: translate(-150px, 0);
+    }
+  }
+  
+} */
 
 @keyframes pulse {
   25% {
