@@ -1036,7 +1036,7 @@ and (orientation : landscape) {
 /* iPad Pro Portrait */
 @media only screen 
 and (min-device-width : 1024px) 
-and (max-device-width : 1366px) 
+and (max-device-width : 3000px) 
 and (orientation : portrait) {
   .element {
     position: absolute;
@@ -1065,24 +1065,35 @@ and (orientation : portrait) {
   }
 }
 
-/* @media only screen and (device-width: 815px) and (orientation: landscape){
-  
-
-  @keyframes nudge {
-    0%, 100% {
-      transform: translate(0, 0);
-    }
+/* Desktop */
+@media (min-width: 1367px) {
+  .element {
     
-    50% {
-      transform: translate(150px, 0);
-    }
-    
-    80% {
-      transform: translate(-150px, 0);
-    }
+    bottom: 20%;
+    left: 20%;
+    height: 650px;
+    width: 650px;
+    background-color: red;
+    animation: 
+      pulse 3s ease infinite alternate, 
+      nudge 5s linear infinite alternate;
+    border-radius: 100%;
+    margin: auto;
   }
   
-} */
+  .circle-txt {
+    margin: auto;
+    bottom: -45%;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    /* NOT IMPORTANT */
+    font-family: arial, sans-serif;
+    font-size: 62px;
+    font-weight: bold;
+    color: #fff;
+  }
+}
 
 @keyframes pulse {
   25% {
