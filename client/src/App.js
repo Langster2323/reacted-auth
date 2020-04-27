@@ -15,6 +15,7 @@ import Authenticated from './components/Authenticated';
 import PrivateRoute from './PrivateRoute';
 
 import withContext from './Context';
+import Dashboard from './components/Dashboard';
 
 // Connect components to context...
 const UserSignUpWithContext = withContext(UserSignUp);
@@ -30,6 +31,7 @@ export default () => (
 
       <Switch>
         <Route exact path="/" component={Public} />
+        <Route path="/dashboard" component={Dashboard} />
         <PrivateRoute path="/authenticated" component={AuthWithContext} />
         <PrivateRoute path="/settings" component={AuthWithContext} />
         <Route path="/signin" component={UserSignInWithContext} />

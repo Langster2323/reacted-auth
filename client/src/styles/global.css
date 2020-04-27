@@ -721,6 +721,20 @@ input:focus {
   box-shadow: 0 0 0 2px #63537d inset;
 }
 
+/* Background image */
+body {
+  background: url('./assets/health-curve.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Cards */
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+  }
 
 /* Mobile devices */
 @media only screen 
