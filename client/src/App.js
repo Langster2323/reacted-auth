@@ -27,7 +27,7 @@ const AuthWithContext = withContext(Authenticated)
 export default () => (
   <Router>
     <div>
-      <HeaderWithContext />
+      
 
       <Switch>
         <Route exact path="/" component={Public} />
